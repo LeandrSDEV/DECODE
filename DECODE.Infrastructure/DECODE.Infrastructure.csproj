@@ -43,5 +43,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DECODE.Domain\DECODE.Domain.csproj">
+      <Project>{ccc444d4-b0ae-40b7-b647-382bf3265b12}</Project>
+      <Name>DECODE.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

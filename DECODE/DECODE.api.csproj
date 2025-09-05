@@ -17,4 +17,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DECODE.application\DECODE.Application.csproj" />
+  </ItemGroup>
+
 </Project>
