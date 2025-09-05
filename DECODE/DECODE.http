@@ -1,0 +1,6 @@
+@DECODE_HostAddress = http://localhost:5194
+
+GET {{DECODE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
