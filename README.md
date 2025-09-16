@@ -1,4 +1,4 @@
-# EmpresaModerna - Website Corporativo
+# DECODE - Website Corporativo
 
 Um website moderno e responsivo desenvolvido em React com TypeScript e Tailwind CSS, apresentando uma empresa de tecnologia com design interativo e microinterações elegantes.
 
