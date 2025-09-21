@@ -24,11 +24,21 @@ const Navbar = ({ activeSection, setActiveSection }) => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button
+            {/* <button
               onClick={() => handleNavClick('home')}
               className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-200"
             >
               DECODE
+            </button> */}
+            <button
+              onClick={() => handleNavClick('home')}
+              className="flex items-center"
+            >
+              <img
+                src="/logo2.png"
+                alt="Logo"
+                className="h-10 w-auto hover:scale-105 transition-transform duration-200"
+              />
             </button>
           </div>
 
@@ -39,11 +49,10 @@ const Navbar = ({ activeSection, setActiveSection }) => {
                 <button
                   key={item.id}
                   onClick={() => handleNavClick(item.id)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:scale-105 ${
-                    activeSection === item.id
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:scale-105 ${activeSection === item.id
                       ? 'text-blue-600 bg-blue-50 shadow-sm'
                       : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
@@ -78,21 +87,19 @@ const Navbar = ({ activeSection, setActiveSection }) => {
       </div>
 
       {/* Mobile Navigation Menu */}
-      <div className={`md:hidden transition-all duration-300 ease-in-out ${
-        isMenuOpen 
-          ? 'max-h-96 opacity-100' 
+      <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen
+          ? 'max-h-96 opacity-100'
           : 'max-h-0 opacity-0 overflow-hidden'
-      }`}>
+        }`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => handleNavClick(item.id)}
-              className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
-                activeSection === item.id
+              className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${activeSection === item.id
                   ? 'text-blue-600 bg-blue-50'
                   : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-              }`}
+                }`}
             >
               {item.label}
             </button>
