@@ -12,10 +12,10 @@ const Home = ({ setActiveSection }) => {
   return (
   <section
   className="relative min-h-screen bg-cover bg-center pt-16"
-  style={{ backgroundImage: "url('/background3.jpg')" }}
+  style={{ backgroundImage: "url('/background4.jpg')" }}
 >
   {/* Overlay para reduzir opacidade */}
-  <div className="absolute inset-0 bg-white bg-opacity-50"></div>
+  <div className="absolute inset-0 bg-blue bg-opacity-50"></div>
 
   {/* Conteúdo por cima */}
   <div className="relative z-10">
@@ -31,7 +31,7 @@ const Home = ({ setActiveSection }) => {
                   Empresa 100% autentica
                 </div>
 
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   Transformamos
                   <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     {' '}Ideias{' '}
@@ -39,7 +39,7 @@ const Home = ({ setActiveSection }) => {
                   em Realidade
                 </h1>
 
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="relative text-xl text-white leading-relaxed">
                   Somos uma empresa moderna especializada em soluções inovadoras que impulsionam o crescimento do seu negócio.
                   Combinamos tecnologia de ponta com estratégias personalizadas para entregar resultados excepcionais.
                 </p>
@@ -98,8 +98,9 @@ const Home = ({ setActiveSection }) => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-4 group-hover:shadow-lg transition-shadow duration-300">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-gray-900 mb-2">{stat.value}</div>
-                <div className="text-gray-600 text-sm">{stat.label}</div>
+                <div className="bg-none text-3xl font-bold text-white mb-2">{stat.value}</div>
+                <div className="text-white text-sm "
+                 style={{  boxShadow: "0 4px 20px rgba(0, 0, 0, 1)" }}>{stat.label}</div>
               </div>
             ))}
           </div>
