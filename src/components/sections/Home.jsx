@@ -11,7 +11,7 @@ const Home = ({ setActiveSection }) => {
 
   return (
   <section
-  className="relative min-h-screen bg-cover bg-center pt-16"
+  className="relative min-h-screen bg-cover bg-center pt-16 "
   style={{ backgroundImage: "url('/background4.jpg')" }}
 >
   {/* Overlay para reduzir opacidade */}
@@ -33,7 +33,7 @@ const Home = ({ setActiveSection }) => {
 
                 <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
                   Transformamos
-                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
                     {' '}Ideias{' '}
                   </span>
                   em Realidade
@@ -49,7 +49,7 @@ const Home = ({ setActiveSection }) => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   onClick={() => setActiveSection('projetos')}
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl group"
+                  className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-400 hover:to-blue-500 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl group"
                 >
                   Ver Nossos Projetos
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -95,12 +95,12 @@ const Home = ({ setActiveSection }) => {
                 key={index}
                 className="text-center group hover:scale-105 transition-transform duration-300"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-4 group-hover:shadow-lg transition-shadow duration-300">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full mb-4 group-hover:shadow-lg transition-shadow duration-300">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
                 <div className="bg-none text-3xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-white text-sm "
-                 style={{  boxShadow: "0 4px 20px rgba(0, 0, 0, 1)" }}>{stat.label}</div>
+                <div className="text-black text-sm bg-white rounded-2xl p-1.5"
+                 >{stat.label}</div>
               </div>
             ))}
           </div>
@@ -110,7 +110,7 @@ const Home = ({ setActiveSection }) => {
         <div className="fixed bottom-8 right-8 z-40">
           <Button
             onClick={() => setActiveSection('contato')}
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+            className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-400 hover:to-blue-500 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
           >
             <ArrowRight className="w-6 h-6" />
           </Button>

@@ -64,7 +64,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
           <div className="hidden md:block">
             <Button
               onClick={() => handleNavClick('contato')}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               Fale Conosco
             </Button>
