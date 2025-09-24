@@ -68,9 +68,9 @@ const Home = ({ setActiveSection }) => {
 
             {/* Visual Element */}
             <div className="relative">
-              <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 hover:shadow-3xl transition-shadow duration-300">
+              <div className="relative z-10 bg-white rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow duration-300">
                 <div className="space-y-6">
-                  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                  <div className="max-w-5xl mx-auto px-1   py-1">
                     <video
                       src="/videoap.mov"
                       controls
