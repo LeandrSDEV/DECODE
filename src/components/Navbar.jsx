@@ -7,9 +7,9 @@ const Navbar = ({ activeSection, setActiveSection }) => {
 
   const navItems = [
     { id: 'home', label: 'Home' },
-    { id: 'sobre', label: 'Sobre' },
+    /*{ id: 'sobre', label: 'Sobre' },
     { id: 'servicos', label: 'Serviços' },
-    { id: 'projetos', label: 'Projetos' },
+    { id: 'projetos', label: 'Projetos' },*/
     { id: 'contato', label: 'Contato' }
   ]
 

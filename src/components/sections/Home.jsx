@@ -46,7 +46,7 @@ const Home = ({ setActiveSection }) => {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/*<div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   onClick={() => setActiveSection('projetos')}
                   className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-400 hover:to-blue-500 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-xl group"
@@ -63,7 +63,7 @@ const Home = ({ setActiveSection }) => {
                   <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-200" />
                   Conheça Nossa História
                 </Button>
-              </div>
+              </div>*/}
             </div>
 
             {/* Visual Element */}
