@@ -74,7 +74,8 @@ const Contato = () => {
   ]
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 pt-16">
+    <section className="relative min-h-screen bg-cover bg-center pt-16 "
+  style={{ backgroundImage: "url('/background4.jpg')" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Header */}
         <div className="text-center mb-16">
@@ -82,13 +83,13 @@ const Contato = () => {
             <MessageSquare className="w-4 h-4 mr-2" />
             Entre em Contato
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Vamos
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
               {' '}Conversar
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
             Estamos prontos para transformar suas ideias em realidade. Entre em contato conosco 
             e descubra como podemos ajudar seu negócio a crescer.
           </p>
@@ -181,7 +182,7 @@ const Contato = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg group"
+                  className="w-full bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-400 hover:to-blue-500 text-white py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg group"
                 >
                   <Send className="mr-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
                   Enviar Mensagem
@@ -207,7 +208,7 @@ const Contato = () => {
               <div className="space-y-6">
                 {contactInfo.map((item, index) => (
                   <div key={index} className="flex items-start space-x-4 group hover:scale-105 transition-transform duration-200">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:shadow-lg transition-shadow duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:shadow-lg transition-shadow duration-300">
                       <item.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -221,7 +222,7 @@ const Contato = () => {
             </div>
 
             {/* Quick Actions */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-r from-blue-400 to-blue-500 rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Precisa de Ajuda Rápida?</h3>
               <p className="mb-6 opacity-90">
                 Nossa equipe está sempre disponível para esclarecer suas dúvidas e ajudar com seu projeto.
